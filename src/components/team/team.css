@@ -1,0 +1,74 @@
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+.team .items {
+  transition: 0.5s;
+  position: relative; 
+}
+
+.team img {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.team .overlay {
+  position: absolute; 
+  bottom: 0;
+  /* left: 0;  */
+  /* right: 0;  */
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* opacity: 0;  */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  transition: 0.5s;
+}
+
+.team .overlay i {
+  background-color: black;
+  color: white;
+  margin: 5px;
+}
+
+.team .text {
+  padding: 30px;
+  text-align: center;
+}
+
+.team .text h2 {
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.team .text p {
+  font-size: 20px;
+  color: #333;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.team .items:hover {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+}
+
+.team .items:hover p {
+  color: white;
+}
+
+.team .items:hover .overlay {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

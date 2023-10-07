@@ -1,0 +1,54 @@
+.gym .container {
+  position: relative;
+  width: 353px;
+}
+
+.gym .pic {
+  display: block;
+  width: fit-content;
+  height: 400px;
+}
+
+.gym .overlays {
+  position: absolute;
+  bottom: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 300px; 
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlays {
+  height: 100%;
+}
+
+.gym .texts {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gym .container button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position: relative;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}

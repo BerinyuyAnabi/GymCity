@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: gray; /* Change icon whole bg color here*/
+}
+.container{
+  max-width: 85%;
+  margin:auto;
+}
+.flexSB{
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  width:40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white; /* Change icon bg color here*/
+  color: black; /* Change icon color here*/
+  transition: 0.5s;
+}
+.icon:hover{
+  cursor: pointer;
+  background-color: #FF1493; /* Change hover bg color here*/
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+button {
+  border: none;
+}
+.row{
+  width:50%;
+}
+button{
+  padding: 17px 30px;
+  background-color: #fff;
+  color:#FF1493;
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgba(0 0 0 /9%);
+}
+button i{
+  margin-left:20px;
+}
+button:hover{
+  box-shadow: none;
+}
+.primary-btn{
+  background-color: #FF1493;
+  color: white;
+}
+#heading{
+  text-align: center;
+  padding: 40px 0px;
+}
+#heading h3{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#FF1493;
+  text-transform: uppercase;
+}
+#heading h1{
+  font-size: 45px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+p{
+  line-height: 30px;
+  font-size: 18px;
+}
+.back{
+  background-image: url('../public/images/back.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    padding-right: 50px;
+    color: #FF1493;
+    text-align: center;
+}
+.back h1{
+  font-weight: 400;
+  font-size: 100px;
+}
+.back h2{
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.marigin{
+  margin-top: 40.3%;
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+}
+.flex{
+  display: flex;
+  /* justify-content: center; */
+}
+
+
+@media screen and (max-width:768px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .back{
+    background-position: center;
+    padding-top: 50%;
+    height: 50vh;
+  }
+  
+  
+}

@@ -1,0 +1,53 @@
+/* contact.css */
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between the image and the form */
+    height: 80vh;
+    padding: 200px; /* Add padding for additional space around the content */
+    
+  }
+  .contain .form{
+    background-color: pink;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+  }
+  
+  .contact-form {
+    width: 500vh;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contain input,
+  textarea {
+    width: 150%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  

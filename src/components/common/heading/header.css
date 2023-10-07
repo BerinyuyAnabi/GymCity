@@ -1,0 +1,82 @@
+.head{
+    padding: 20px 0;
+    color: white;
+}
+.logo h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+.head .icon {
+    margin-left: 10px;
+}
+
+/*--------------------------header-----------------------------*/
+
+header{
+    background-color:pink; /* Change color nav bar here*/
+    opacity: 0.8;
+    margin: 0 30px;
+    position: relative;
+}
+header ul{
+    padding: 30px 20px;
+}
+header li{
+    margin-right: 40px;
+}
+
+header ul li a{
+    color: white;  /*color of elements on nav tab*/
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    color:#FF1493;
+}
+.start{
+    background-color: #FF1493; /* Change color button on nav bar here*/
+    padding: 30px 70px;
+    color: white;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%) 
+}
+
+.toggle{
+    display: none;
+    background-color: #FF1493;
+}
+
+@media screen and (max-width: 768px){
+    .start{
+        clip-path: none;
+    }
+    header{
+        margin: 0;
+        background-color:#FF1493; /* Change color of the nav bar here*/
+        position: relative;
+    }
+    header ul.flexSB{
+        display: none;
+    }
+    header ul li{
+        margin-bottom: 20px;
+
+    }
+    .toggle{
+        display: block;
+        background-color: none;
+        color: white; /* Change color of the bar seen using a phone or tab here*/
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        background-color: #FF1493; /* Change color of the nav bar when app in phone or tab mode*/
+    }
+}
+
